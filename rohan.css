@@ -1,0 +1,39 @@
+body{
+font-family:Arial,sans-serif;
+background-color:#8B4513;
+text-align:center;
+margin:0;  /*remove default margin*/
+padding:0;   /*remove default padding*/
+display:flex;
+justify-content:center;   /*horizontally centers*/
+align-items:center;/*#vertically centers*/
+height: 100vh;   /*100 perc size of viewport*/
+}
+
+.container{
+    background-color:#f5e1a4;
+    padding: 30px;
+    border-radius:10px;   /*rounds the corner*/
+    box-shadow:0 0 10px rgba(0,0,0,0.1);   /*hori shadow  verti shadow blur_radius  color_of_shadow */
+}
+
+button{
+    padding:10px 20px;  /*tb and lr*/
+    font-size:16px;
+    background-color:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;     /*changes mouse cursor on hovering on clickable object*/
+}
+
+button:hover{
+    background-color:#0056b3;
+}
+
+#quote{
+    font-size:18px;
+    font-style:italic;
+    color:#555;
+    margin-bottom:20px;   /* space between element and element below it*/
+}
