@@ -27,7 +27,19 @@ function getrandomquote(){
     quoteText.textContent=quotes[randomindex];   //updates the quote by selecting randomly
 }
 
+document.getElementById('change-color-btn').addEventListener('click',function(){
+    document.body.style.backgroundColor=getRandomColor();
+});
+
+
+function getRandomColor(){
+    const colors=['#FF5733','#33FF57','#5733FF','#F5B041','#F39C12','#ce4e0b','#20e6ef','#ef204e','#d320ef','#e4c00b'];
+    const randomIndex=Math.floor(Math.random()*colors.length);
+    return colors[randomIndex];
+}
+
 newQuotebtn.addEventListener("click",getrandomquote);
+getrandomquote();
 
 
 
